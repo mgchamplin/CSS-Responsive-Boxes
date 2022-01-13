@@ -1,3 +1,41 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid purple;
+}
+
+/*********************************
+ * Container
+ *********************************/
+.container {
+  display: flex;
+  width: 90%;
+  min-height: 20em;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+div[class$="row"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.a {
+  width: 100%;
+  min-height: 5em;
+  min-width: 20em;
+}
+.b {
+  width: 40%;
+  min-height: 5em;
+  min-width: 20em;
+}
+.c {
+  width: 40%;
+  min-height: 5em;
+  min-width: 20em;
+}
