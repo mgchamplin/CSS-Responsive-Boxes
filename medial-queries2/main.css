@@ -1,3 +1,63 @@
 body {
   background: papayawhip;
+  height: 60vh;
+  padding: 4rem;
+}
+
+* {
+}
+
+.a {
+  grid-area: abox;
+  background-color: blue;
+}
+.b {
+  grid-area: bbox;
+  background-color: green;
+}
+.c {
+  grid-area: cbox;
+  background-color: purple;
+}
+.d {
+  grid-area: dbox;
+  background-color: orange;
+}
+.e {
+  grid-area: ebox;
+  background-color: red;
+}
+.f {
+  grid-area: fbox;
+  background-color: brown;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "abox abox abox abox abox abox abox abox"
+    "bbox bbox bbox bbox bbox bbox fbox fbox"
+    "cbox cbox dbox dbox ebox ebox fbox fbox";
+  grid-gap: 10px;
+  padding: 10px;
+  height: 100%;
+  border: 2px solid purple;
+}
+
+.container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "abox abox abox"
+      "bbox bbox bbox"
+      "bbox bbox bbox"
+      "bbox bbox bbox"
+      "cbox dbox ebox"
+      "fbox fbox fbox";
+  }
 }
